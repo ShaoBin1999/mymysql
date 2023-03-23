@@ -2,7 +2,7 @@ package com.bsren.mymysql.storage;
 
 public interface PageId {
 
-    byte[] serialize();
+    int[] serialize();
 
     int getTableId();
 
@@ -10,6 +10,6 @@ public interface PageId {
 
     boolean equals(Object o);
 
-    int getPageId();
+    int getPageNo();
 
 }
